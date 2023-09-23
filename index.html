@@ -3,23 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://kit.fontawesome.com/9e420ef10d.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
     <title>Borey Lon</title>
 </head>
 <body>
-    
+    <!-- Start Background circle -->
+    <div class="bg-circle">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+        <div class="circle-4"></div>
+    </div>
+
+    <!-- Start Overlay  -->
+    <div class="overlay"></div>
+    <!-- Start Overlay  -->
+
     <!-- Main Start  -->
     <div class="main">
+        <!-- Start Header -->
+            <div class="header">
+                <div class="container">
+                    <div class="row flex-end">
+                        <button type="button" class="nav-toggler">
+                            <span></span>
+                        </button>
+                        <div class="nav">
+                            <div class="nav-inner">
+                                <ul>
+                                    <li><a href="#home" class="nav-item link-item">home</a></li>
+                                    <li><a href="#about" class="nav-item link-item">about</a></li>
+                                    <li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
+                                    <li><a href="#contact" class="nav-item link-item">contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- End Header -->
+
         <!-- Home Section Start -->
-        <section class="home-section align-items-center">
+        <section class="home-section align-items-center active" id="home">
             <div class="container ">
                 <div class="row align-items-center">
                     <div class="home-text">
                         <p>Hello, I'm</p>
                         <h1>Borey Lon</h1>
                         <h2>Full Stack Web Developer</h2>
-                        <a href="#" class="btn"> about me</a>
-                        <a href="#" class="btn"> portfolio</a>
+                        <a href="#about" class="btn link-item"> about me</a>
+                        <a href="#portfolio" class="btn link-item"> portfolio</a>
                     </div>
                     <div class="home-image">
                         <div class="img-box">
@@ -30,8 +65,313 @@
             </div>
         </section>
         <!-- Home Section End -->
+
+        <!-- Start About -->
+        <section class="about-section sec-padding" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>about me</h2>
+                    </div>
+                </div>
+                <div class="about-row">
+                    <div class="about-img">
+                        <div class="img-box">
+                            <img src="./images/profile.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="about-text">
+                        <p>I am passionate about using technology to solve real-world problems. I am also interested in the intersection of technology and social justice. 
+                            I believe that technology can be used to empower people and make the world a better place.</p>
+                        <p><br>
+                           I am a hard worker and I am always willing to learn new things. I am also a team player and I am always willing to help others. 
+                           I am confident that I have the skills and the drive to succeed in my career. I am excited to start my career in full stack engineering. 
+                           I am looking forward to using my skills and my passion to make a difference in the world.
+                        </p>
+
+                            <h3>skills</h3>
+                            <div class="skills">
+                                <div class="skill-item">html</div>
+                                <div class="skill-item">CSS</div>
+                                <div class="skill-item">javaScript</div>
+                                <div class="skill-item">tailwindcss</div>
+                                <div class="skill-item">reactJS</div>
+                                <div class="skill-item">nextJS</div>
+                                <div class="skill-item">react native</div>
+                                <div class="skill-item">nodeJS & express</div>
+                                <div class="skill-item">Python</div>
+                                <div class="skill-item">django</div>
+                                <div class="skill-item">mySQL</div>
+                                <div class="skill-item">postreSQL</div>
+                                <div class="skill-item">mongodb</div>      
+                                <div class="skill-item">PowerBI</div>      
+                                <div class="skill-item">Project Management</div>
+                                <div class="skill-item">Problem Solving</div>                         
+                            </div>
+
+                            <!-- Start about Tabs -->
+                            <div class="about-tabs">
+                                <button type="button" data-target="#education" class="tab-item active">education</button>
+                                <button type="button" data-target="#experience" class="tab-item">experience</button>
+                            </div>
+                            <!-- End about Tabs -->
+
+                            <!-- Start Education -->
+                                <div class="tab-content active" id="education">
+                                    <div class="timeline">
+                                        <div class="timeline-item">
+                                            <span class="date"> 2023 - Present </span>
+                                            <h4>Full Stack Engineer - <span> Codecademy  Institution</span></h4>
+                                            <p> Build web applications, stylized, responsive and interactive website with HTML and CSS, javaScript, ReactJS. 
+                                                Managing back-end development by creating a RESTful API that serves data and designing relational databases 
+                                                and build secure full-stack applications and underlying operating system fundamentals.</p>        
+                                        </div>                                
+                                    
+                                   
+                                        <div class="timeline-item">
+                                            <span class="date"> 2009 - 2013 </span>
+                                            <h4>Computer Science - <span> University of Management and Economics (UME)</span></h4>
+                                            <p>Successfully graducated Bachellor degree with the Bachellor GPA 3.11 (Grade B). 
+                                                Bachellor degree in Computer Science including theoretical and algorithmic foundations, 
+                                                hardware and software, and uses for processing information.
+                                            </p>    
+                                             
+                                        </div>                                 
+                                    
+                                        <div class="timeline-item">
+                                            <span class="date"> 2009 </span>
+                                            <h4>High School Graducated - <span> Mongkul Borey High School </span></h4>
+                                            <p>Successfully graducated from the hight school PACII with the Grade C level.</p>       
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            <!-- End Education -->
+
+                            <!-- Start Experience -->
+                            <div class="tab-content" id="experience">
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <span class="date">2022 - Present</span>
+                                        <h4>Technology Manager - <span>SeeBeyondBorders (SBB)</span></h4>
+                                        <p class="responsibility">Responsibility</p>
+                                        <ul class="list-item">
+                                            <li>Maintain and monitor a database of digital resources, and evaluate the effectiveness of web deployment</li>
+                                            <li>Managing a database of resources to optimize their accessibility and to develop assessment tools to determine 
+                                                the value and penetration of the resources developed and their relationship with improving learning outcomes</li>
+                                            <li>Lead the design of digital learning resources and ensure they are accessible to users (teachers) and have good information architecture</li>
+                                            <li>Create and maintain comprehensive project documentation including logical frameworks, work plans, budgets, and templates.</li>
+                                            <li>Collect, prepare, and analyze data to track and monitor project goals, indicators, outcomes, and outputs of the project</li>
+                                            <li>Review and evaluate the project and write detailed</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <span class="date">2020 - 2022</span>
+                                        <h4>Communication Assistant - <span>Nickol Global Solutions LLC</span></h4>
+                                        <p class="responsibility">Responsibility</p>
+                                        <ul class="list-item">
+                                            <li>Support OW4C coordination efforts with other donors, NGOs, civil society groups, government officials</li>
+                                            <li>Maintain project records as directed by the Program Manager</li>
+                                            <li>Maintain master calendar for OW4C activities, events, and public forums</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <span class="date">2011 - 2020</span>
+                                        <h4>Project Officer - <span>Village Support Group (VSG)</span></h4>
+                                        <p class="responsibility">Responsibility</p>
+                                        <ul class="list-item">
+                                            <li>Design website and organization communication materials</li>
+                                            <li>Handled the project progress report, database, and project activities</li>
+                                            <li>Prepared presentations for prospective partners/NGOs</li>
+                                            <li>Provided training related to financial management, natural resource, and conservation management</li>
+                                            <li>Managed ICT, mapping, and IT support staff</li>
+                                            <li>Performed project activities</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Start Experience -->
+
+                            <!-- Button Download CV -->
+                            <a href="./documents/boreylon-resume.pdf" target="_blank" class="btn">download CV</a>
+                            <a href="#contact" class="btn link-item">contact me</a>
+                            <!-- Button Download CV -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About -->
+
+        <!-- Start Portfolio Section -->
+        <section class="portfolio-section sec-padding" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>recent work</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Start Portfolio Item -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./images/thumbnail-01.png" alt="Portfolio item thumbnail">
+                        </div>
+                        <h3 class="portfolio-item-title">Education Web Application</h3>
+                        <button type="button" class="btn view-project-btn">view project</button>
+                        <div class="portfolio-item-detail">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum totam voluptatibus 
+                                    suscipit dolores corporis sed id quas necessitatibus vero ipsum.</p>
+                            </div>
+                        
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>July 2023</span></li>
+                                    <li>Technology - <span>ReactJS, NodeJS, MySQL</span></li>
+                                    <li>Role - Frontend and back-end</li>
+                                    <li>Live View - <span><a href="https://sbbdigitalresource.org/" target="_blank">www.sbbdigitalresource.org</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Portfolio Item -->
+
+                    <!-- Start Portfolio Item -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./images/thumbnail-02.png" alt="Portfolio item thumbnail">
+                        </div>
+                        <h3 class="portfolio-item-title">Math Digital Resource</h3>
+                        <button type="button" class="btn view-project-btn">view project</button>
+                        <div class="portfolio-item-detail">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum totam voluptatibus 
+                                    suscipit dolores corporis sed id quas necessitatibus vero ipsum.</p>
+                            </div>
+                        
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>August 2023</span></li>
+                                    <li>Technology - <span>Html, Css, javaScript</span></li>
+                                    <li>Role - Frontend</li>
+                                    <li>Live View - <span><a href="https://math.sbbdigitalresource.org/" target="_blank">math.sbbdigitalresource.org</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Portfolio Item -->
+                    <!-- Start Portfolio Item -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="./images/thumbnail-03.png" alt="Portfolio item thumbnail">
+                        </div>
+                        <h3 class="portfolio-item-title">Tea Cozy Project</h3>
+                        <button type="button" class="btn view-project-btn">view project</button>
+                        <div class="portfolio-item-detail">
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum totam voluptatibus 
+                                    suscipit dolores corporis sed id quas necessitatibus vero ipsum.</p>
+                            </div>                        
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>September 2023</span></li>
+                                    <li>Technology - <span>HTML, Css</span></li>
+                                    <li>Role - Frontend</li>
+                                    <li>Live View - <span><a href="https://codepen.io/lonborey/pen/LYMRYNB?editors=1100" target="_blank">www.codepen.io/lonborey/</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Portfolio Item -->
+                </div>
+            </div>
+        </section>
+        <!-- End Portfolio Section -->
+        
+        <!-- Start Contact Section -->
+            <section class="contact-section sec-padding" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>contact me</h2>
+                        </div>
+                        <div class="row">
+                            <div class="contact-form">
+                                <form>
+                                    <div class="row">
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Name" class="input-control" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Email" class="input-control" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Subject" class="input-control" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <textarea placeholder="Message" class="input-control" required></textarea>
+                                        </div>
+                                        <div class="submit-btn">
+                                            <button type="submit" class="btn">send message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-info-item">
+                                    <h3>Email</h3>
+                                    <p>lonborey@gmail.com</p>
+                                </div>
+
+                                <div class="contact-info-item">
+                                    <h3>Phone</h3>
+                                    <p><span>(+855)</span>12-730-710</p>
+                                </div>
+
+                                <div class="contact-info-item">
+                                    <h3>Follw me</h3>
+                                    <div class="social-link">
+                                        <a href="https://www.facebook.com/lonborey/" target="_blank"><i class="fab fa-facebook"></i></a>
+                                        <a href="https://www.linkedin.com/in/lonborey/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                        <a href="https://www.youtube.com/lonboreyit" target="_blank"><i class="fab fa-youtube"></i></a>
+                                        <a href="https://twitter.com/lon_borey/" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://github.com/lonborey" target="_blank"><i class="fab fa-github"></i></a>
+                                        <a href="https://www.instagram.com/lonborey/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://lonborey.github.io/" target="_blank"><i class="fa fa-globe"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- End Contact Section -->
+        
     </div>
     <!-- Main End -->
+
+    <!-- Start Portfolio item detail popup -->
+    <div class="portfolio-popup">
+        <div class="pp-inner">
+            <div class="pp-content">
+                <div class="pp-header">
+                    <button type="button" class="btn pp-close"><i class="fas fa-times"></i></button>
+                    <div class="pp-thumbnail">
+                        <img src="./images/thumbnail-01.png" alt="thumbnail">
+                    </div>
+                    <h3></h3>                    
+                </div>
+
+                <div class="pp-body">                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Portfolio item detail popup -->
+
 
 <script src="./js/scripts.js"></script>
 </body>
